@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+
+
+
+Route::get('/alert-map', 'AlertMapController@putMarkers');
+Route::post('/save-alert-marker', 'AlertMapController@saveMarker');
