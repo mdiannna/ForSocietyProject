@@ -4,7 +4,7 @@
 
 <link href="{{ asset('css/style.css')}}" rel="stylesheet">
 
-<section class="text-center section pt-4">
+<section class="text-center section">
 	<div>
 		<h2>
 			View alerts

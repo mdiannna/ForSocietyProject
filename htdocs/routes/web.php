@@ -29,3 +29,8 @@ Route::get('/sentiment-analysis', 'SentimentAnalysisController@index');
 Route::get('/sentiment-analysis/{text}/json', 'SentimentAnalysisController@json');
 
 Route::get('/alert-info', 'AlertInfoController@index');
+
+Route::get('/earthquakes/all', 'EarthquakeInfoController@all');
+Route::get('/earthquakes/all-romania', 'EarthquakeInfoController@allRomania');
+Route::get('/earthquakes/raw', 'EarthquakeInfoController@raw');
+Route::get('/earthquakes/romania-past-hour', 'EarthquakeInfoController@pastHourRomania');

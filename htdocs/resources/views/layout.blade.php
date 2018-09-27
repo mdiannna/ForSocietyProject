@@ -28,14 +28,24 @@
 
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-          <!-- <a class="nav-link dropdown-toggle" href="alert-info" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
             Intervention teams
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="/alert-info">View alerts</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Recent earthquakes
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/earthquakes/all">Worldwide</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/earthquakes/all-romania">Romania</a>
+            <a class="dropdown-item" href="/earthquakes/romania-past-hour">Romania - past hour</a>
           </div>
         </li>
       </ul>
@@ -45,8 +55,9 @@
       </form>
     </div>
   </nav>
+   @yield('banner')
 
-  <div class="container">
+  <div class="container pt-3">
 
    @yield('content')
 
