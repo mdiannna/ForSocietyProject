@@ -17,8 +17,8 @@ class CreatePinsTable extends Migration
             $table->increments('id');
             $table->string('address')->nullable();
             $table->text('details')->nullable();
-            $table->string('lat');
-            $table->string('lng');
+            $table->decimal('lat', 15, 10);
+            $table->decimal('lng', 15, 10);
             $table->integer('status');
             $table->unsignedInteger('pin_type_id')->nullable();
             $table->unsignedInteger('badge_type_id')->nullable();
