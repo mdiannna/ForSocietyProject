@@ -33,7 +33,7 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="/alert-info">View alerts</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/alert-info/buildings-collapsed">Collapsed buildings</a>
+            <!-- <a class="dropdown-item" href="/alert-info/buildings-collapsed">Collapsed buildings</a> -->
             <a class="dropdown-item" href="/alert-info/buildings">Buildings info</a>
           </div>
         </li>
