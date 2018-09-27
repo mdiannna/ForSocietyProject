@@ -23,17 +23,30 @@
 		  </thead>
 		  <tbody>
 		  	@foreach($pins as $pin)
-		  		@if($pin->emotions_coefficient > 0.7)
+		  		@if($pin->emotions_coefficient > 0.6)
 		    		<tr class="table-danger">
-		    	@elseif($pin->emotions_coefficient > 0.5)
+		    	@elseif($pin->emotions_coefficient > 0.3)
 		    		<tr class="table-warning">
 		    	@else 
-		    		<tr class="table-info">
+		    		<tr class="table-active">
 		    	@endif
 		      <th scope="row">{{$loop->index }}</th>
 		      <td>{{ $pin->address }}</td>
 		      <td>{{ $pin->details }}</td>
-		      <td>{{ $pin->type }}</td>
+
+		      <td>
+		      	@if($pin->pin_type_id==2)
+		      		Medical
+		      	@elseif($pin->pin_type_id==3)
+		      		Blocked access
+		      	@elseif($pin->pin_type_id==4)
+		      		Leakage of gas
+		      	@elseif($pin->pin_type_id==5)
+		      		Fire
+		      	@else
+		      		Other
+		      	@endif
+		      	</td>
 		      <td>{{ $pin->sentiment }}</td>
 		      <td>{{ $pin->emotions_coefficient }}</td>
 		      <td><a href="/alert-map" class="btn btn-dark">View on map</a></td>

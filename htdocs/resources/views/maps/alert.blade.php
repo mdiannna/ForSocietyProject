@@ -12,11 +12,10 @@
       </h1>
 
       <div class="row">
-        <label class="checkbox-inline" style="color:red"><b><input type="checkbox" value="">Medical emergency</b></label>
-        <label class="checkbox-inline"  style="color:blue"><b><input type="checkbox" value="">Blocked access</b></label>
-        <label class="checkbox-inline"  style="color:green"><b><input type="checkbox" value="">Leakage of gas</b></label> 
-        <label class="checkbox-inline"  style="color:orange"><b><input type="checkbox" value="">Fire</b></label> 
-
+        <label class="radio-inline pr-3" style="color:red"><b><input type="radio" name="pin_type_id" value=2> Medical emergency</b></label>
+        <label class="radio-inline pr-3"  style="color:blue"><b><input type="radio" name="pin_type_id" value=3> Blocked access</b></label>
+        <label class="radio-inline pr-3"  style="color:green"><b><input type="radio" name="pin_type_id" value=4> Leakage of gas</b></label> 
+        <label class="radio-inline pr-3"  style="color:orange"><b><input type="radio" name="pin_type_id" value=5> Fire</b></label> 
       </div>
 
 
@@ -291,7 +290,7 @@
             lat: markerLat,
             lng: markerLng,
             details: $('#details').val(),
-            pin_type_id: 1
+            pin_type_id: $("input[name='pin_type_id']:checked").val()
           },
           dataType: 'JSON',
           /* remind that 'data' is the response of the AjaxController */
