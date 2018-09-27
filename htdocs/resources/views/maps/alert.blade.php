@@ -92,7 +92,7 @@
        
      
             infoWindow.setPosition(pos);
-            infoWindow.setContent('Locatia curenta');
+            infoWindow.setContent('Current location');
             infoWindow.open(map);
             map.setCenter(pos);
                 addMarker(pos);
@@ -158,7 +158,7 @@
             var marker = new google.maps.Marker({
               position: new google.maps.LatLng({{ $marker->lat }} , {{ $marker->lng }}),
               map: map,
-              title: "detalii: {{$marker->details}}"
+              title: "Details: {{$marker->details}}"
             });
 
              marker.addListener('mouseover', function() {
@@ -297,7 +297,7 @@
           /* remind that 'data' is the response of the AjaxController */
           success: function (data) { 
               $(".writeinfo").append(data.msg); 
-               alert('Alerta adaugata pe harta\n' + "Descriere: " +$('#details').val());
+               alert('Alert added on map\n' + "Details: " +$('#details').val());
 
                $('#details').val("");
           },

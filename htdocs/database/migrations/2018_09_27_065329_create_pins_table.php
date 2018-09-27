@@ -19,13 +19,15 @@ class CreatePinsTable extends Migration
             $table->text('details')->nullable();
             $table->decimal('lat', 15, 10);
             $table->decimal('lng', 15, 10);
-            $table->integer('status');
+            $table->integer('status')->nullable();
+            $table->decimal('emotions_coefficient')->nullable();
+            $table->decimal('sentiment')->nullable();
             $table->unsignedInteger('pin_type_id')->nullable();
-            $table->unsignedInteger('badge_type_id')->nullable();
+            $table->unsignedInteger('badge_id')->nullable();
             $table->timestamps();
 
             $table->foreign('pin_type_id')->references('id')->on('pin_types');
-            $table->foreign('badge_type_id')->references('id')->on('badges');
+            $table->foreign('badge_id')->references('id')->on('badges');
 
         });
     }
