@@ -20,3 +20,5 @@ Route::get('/', function () {
 
 Route::get('/alert-map', 'AlertMapController@putMarkers');
 Route::post('/save-alert-marker', 'AlertMapController@saveMarker');
+
+Route::get('/sensor-data/{data}', 'SensorDataController@index');
