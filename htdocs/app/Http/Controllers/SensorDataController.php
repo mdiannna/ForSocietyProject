@@ -12,8 +12,8 @@ class SensorDataController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($data)
+    public function index()
     {
-      return  response()->json($data);
+      return  response()->json("Hello!");
     }
 }
