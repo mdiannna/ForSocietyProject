@@ -8,35 +8,34 @@
   <section class="home-section text-center">
     <div>
       <h1>
-          Alert map - adauga locatia ta
+          Alert map - add your location
       </h1>
 
-
       <div class="row">
-        <label class="checkbox-inline" style="color:red"><b><input type="checkbox" value="">Urgenta medicala</b></label>
-        <label class="checkbox-inline"  style="color:blue"><b><input type="checkbox" value="">Acces blocat</b></label>
-        <label class="checkbox-inline"  style="color:green"><b><input type="checkbox" value="">Scurgeri de gaz</b></label> 
-        <label class="checkbox-inline"  style="color:orange"><b><input type="checkbox" value="">Incendiu</b></label> 
+        <label class="checkbox-inline" style="color:red"><b><input type="checkbox" value="">Medical emergency</b></label>
+        <label class="checkbox-inline"  style="color:blue"><b><input type="checkbox" value="">Blocked access</b></label>
+        <label class="checkbox-inline"  style="color:green"><b><input type="checkbox" value="">Leakage of gas</b></label> 
+        <label class="checkbox-inline"  style="color:orange"><b><input type="checkbox" value="">Fire</b></label> 
 
       </div>
 
 
       <div class="row form-group">
 
-      <label for="details">Adauga o descriere</label>
+      <label for="details">Add a description</label>
       <br>
       <textarea class="form-input" name="details" id="details"></textarea>
             <!-- <div class="writeinfo">io</div>    -->
       </div>
         
 
-      <button id="location" name="location" class="btn btn-danger">Adauga locatia curenta</button>
+      <button id="location" name="location" class="btn btn-danger">Add current location</button>
         <!-- <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}"> -->
       
       <div class="pac-card" id="pac-card">
       <div>
         <div id="title">
-          Alert map - adauga locatia ta
+          Alert map - add your location
         </div>
         <div id="type-selector" class="pac-controls">
           <input type="radio" name="type" id="changetype-all" checked="checked">
