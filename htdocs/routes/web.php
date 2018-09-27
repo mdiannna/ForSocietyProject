@@ -29,6 +29,10 @@ Route::get('/sentiment-analysis', 'SentimentAnalysisController@index');
 Route::get('/sentiment-analysis/{text}/json', 'SentimentAnalysisController@json');
 
 Route::get('/alert-info', 'AlertInfoController@index');
+Route::get('/alert-info/buildings', 'AlertInfoController@buildings');
+Route::get('/alert-info/buildings-collapsed', 'AlertInfoController@collapsedBuildings');
+Route::get('/alert-info/add-building', 'AlertInfoController@addBuilding');
+Route::post('/alert-info/store-building', 'AlertInfoController@storeBuilding');
 
 Route::get('/earthquakes/all', 'EarthquakeInfoController@all');
 Route::get('/earthquakes/all-romania', 'EarthquakeInfoController@allRomania');

@@ -17,19 +17,32 @@ class AlertInfoController extends Controller
     public function index()
     {
         $pins = Pin::whereNotNull('sentiment')->orderByDesc('emotions_coefficient')->orderBy('sentiment')->get();
-        return view('alert-info.list', compact('pins'));
+        return view('alert_info.list', compact('pins'));
     }
 
     /**
-    List info about buildings at risk
+      List info about buildings at risk
     */
     public function buildings() {
       $buildings = Building::all();
-      return view('alert-info.buildings.list', compact('buildings'));
+      return view('alert_info.buildings.list', compact('buildings'));
 
     }
 
-    public function collapsedBuildings() {
+    public function addBuilding() {
+      return view('alert_info.buildings.add');
+    }
 
+    public function storeBuilding($request) {
+      $building = new Building( $request->except(['message', '_token']));
+      return redirect('/alert-info/buildings');
+    }
+
+    /**
+      List info about buildings at risk
+    */
+    public function collapsedBuildings() {
+      $buildings = Building::where('collapsed', 1)->get();
+      return view('alert_info.buildings.list', compact('buildings'));
     }
 }
