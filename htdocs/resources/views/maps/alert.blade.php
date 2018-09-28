@@ -28,7 +28,7 @@
       </div>
         
 
-      <button id="location" name="location" class="btn btn-danger">Add current location</button>
+      <button id="location" name="location" class="btn btn-danger mb-3" >Add current location</button>
         <!-- <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}"> -->
       
       <div class="pac-card" id="pac-card">

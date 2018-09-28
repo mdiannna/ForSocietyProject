@@ -50,20 +50,27 @@
 		<div class="pt-3 pb-3 text-center">
 			<h4 class="text-info"><strong>Using AI to prioritize alerts for intervention teams </strong></h4>
 			<p>We use IBM Natural Language Understanding to prioritize alerts for intervention teams based on sentiment and emotion analysis, tracking mostly the negative sentiment and emotions of fear during the earthquake </p>
-			<a href="{{route('alert-info')}}" class="btn btn-primary text-center"> View alerts</a>
+			<a href="{{route('alert-info')}}" class="btn btn-info text-center"> View alerts</a>
 		</div>
 
 		<div class="pt-3 pb-3 text-center">
-			<h4 class="text-success"><strong>Tracking the most recent earthquakes</strong></h4>
+			<h4 class="text-primary"><strong>Intelligent Assistant to ease communication and determine needs</strong></h4>
+			<p>IBM Watson Conversation AI provides a more natural way for people affected by the earthquake to send their needs to the intervention teams</p>
+			<!-- <a href="/watson-chat" class="btn btn-primary text-center"> Start chat</a> -->
+			<a href="/" class="btn btn-primary text-center"> Start chat</a>
+		</div>
+
+		<div class="pt-3 pb-3 text-center">
+			<h4 class="text-warning"><strong>Tracking the most recent earthquakes</strong></h4>
 			<p>See a list of the most recent earthquakes in Romania and worldwide:</p>
 			<p>Source: <i>http://www.seismicportal.eu</i></p>
 			<div class="row text-center">
 				<!-- <div class="col-md-6 md-offset-3"> -->
-					<div class="col-md-3 offset-md-3">
-						<a href="{{route('earthquakes.all')}}" class="btn btn-success text-center"> Recent earthquakes worldwide</a>
+					<div class="col-md-3 offset-md-3 pt-1 pb-1">
+						<a href="{{route('earthquakes.all')}}" class="btn btn-warning text-center"> Recent earthquakes worldwide</a>
 					</div>
-					<div class="col-md-3">
-						<a href="{{route('earthquakes.romania')}}" class="btn btn-success text-center"> Recent earthquakes in Romania</a>
+					<div class="col-md-3 pt-1 pb-1">
+						<a href="{{route('earthquakes.romania')}}" class="btn btn-warning text-center"> Recent earthquakes in Romania</a>
 					</div>
 				</div>				
 			<!-- </div> -->

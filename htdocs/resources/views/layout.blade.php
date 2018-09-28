@@ -49,6 +49,11 @@
             <a class="dropdown-item" href="{{route('earthquakes.romania.past-hour')}}">Romania - past hour</a>
           </div>
         </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{{route('before-earthquake')}}">Prepare and learn</a>
+        </li>
+
+
       </ul>
       <form class="form-inline my-2 my-lg-0">
       <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
