@@ -10,7 +10,7 @@
 		<p class="pt-3">We use Arduino boards, gyroscope sensors and Wi-Fi modules to collect data about buildings during an earthquake and notify the intervention teams and authorities about the damaged or even collapsed buildings.</p>
 		
 		<div class="embed-responsive embed-responsive-16by9">
-  			<iframe class="embed-responsive-item" src="{{url('/video/hardware-overview.mp4')}}" />
+  			<iframe class="embed-responsive-item" src="{{url('/video/hardware_demo.mp4')}}" />
 			</iframe>
 		</div>
 		
