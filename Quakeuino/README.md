@@ -1,4 +1,4 @@
-# ForSocietyProject
+# ForSocietyProject - Quakeuino module
 
 
 Code for the earthquake sensor placed on the buildings that are at risk of collapsing after an earthquake.
