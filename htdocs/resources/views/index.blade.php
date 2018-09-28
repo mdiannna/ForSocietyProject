@@ -7,7 +7,7 @@
       <h1>ForSocietyProject</h1>
       <p>A solution for <b>monitoring earthquakes <br>and reducing the seismic risk</b></p>
       <!-- <a href="/buildings-map/0" class="btn btn-skin scroll">Vezi harta</a> -->
-	<a href="/alert-map" class="btn btn-danger btn-lg">Alert!</a>
+	<a href="/alert-map" class="btn btn-danger btn-lg">Alert! I am affected by the earthquake!</a>
       
     </div>
   </section>
@@ -16,14 +16,48 @@
 @section('content')
 
 <div class="container pt-4 pb-4">
-	<hr>
 	<section class="section pt-3 pb-3">
-		<h2 class="text-center">How to behave before an earthquake?</h2>
+		<div class="text-center">
+			<h1 class="text-center">Pre-Eearthquake</h1>
+			<h4 class="text-success"><strong>How to prepare before an earthquake?</strong></h4>
+			<p class="pt-3">There are some simple rules that you can follow to prepare for the earthquake. Watch the video to see them</p>
+			<div class="embed-responsive embed-responsive-16by9">
+	  			<iframe class="embed-responsive-item" src="{{url('/video/earthquake1.mp4')}}" />
+				</iframe>
+			</div>
+		</div>
+	</section>
+
+	<hr>
+
+	<section class="section pt-3 pb-3 text-center">
+		<h1 class="text-center">Mid-Earthquake</h1>
+		<h4 class="text-warning text-center"><strong>Sensors on buildings - collect data and send to intervention teams</strong></h4>
+		<p class="pt-3">We use Arduino boards, gyroscope sensors and Wi-Fi modules to collect data about buildings during an earthquake and notify the intervention teams and authorities about the damaged or even collapsed buildings.</p>
+		
 		<div class="embed-responsive embed-responsive-16by9">
-  			<iframe class="embed-responsive-item" src="{{url('/video/earthquake1.mp4')}}" />
+  			<iframe class="embed-responsive-item" src="{{url('/video/hardware-overview.mp4')}}" />
 			</iframe>
 		</div>
-		<p>Credits to: Marius Dobre @ForSociety</p>
+		
+	</section>
+
+	<hr>
+
+	<section class="section pt-3 pb-3">
+		<h1 class="text-center">After Earthquake</h1>
+		<div class="pt-3 pb-3 text-center">
+			<h4 class="text-danger"><strong>Alert map - send your location and problem to intervention teams</strong></h4>
+			<a href="/alert-map" class="btn btn-danger btn-lg">Alert! I am affected by the earthquake!</a>
+		</div>
+		<br>
+
+		<div class="pt-3 pb-3 text-center">
+			<h4 class="text-info"><strong>Using AI to prioritize alerts for intervention teams </strong></h4>
+			<p>We use IBM Natural Language Understanding to prioritize alerts for intervention teams based on sentiment and emotion analysis, tracking mostly the negative sentiment and emotions of fear during the earthquake </p>
+			<a href="/alert-info" class="btn btn-primary text-center"> View alerts</a>
+		</div>
+		
 	</section>
 
 </div>
