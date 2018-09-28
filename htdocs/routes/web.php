@@ -18,23 +18,26 @@ Route::get('/', function () {
 
 
 
-Route::get('/alert-map', 'AlertMapController@putMarkers');
-Route::post('/save-alert-marker', 'AlertMapController@saveMarker');
+Route::get('/alert-map', ['as' => 'alert-map', 'uses' => 'AlertMapController@putMarkers']);
+Route::post('/save-alert-marker', ['as' => 'save-alert-marker', 'uses' => 'AlertMapController@saveMarker']);
 
 // Route::get('/sensor-data/{data}', 'SensorDataController@index');
-Route::get('/sensor-data', 'SensorDataController@index');
+Route::get('/sensor-data', ['as' => 'sensor-data', 'uses' => 'SensorDataController@index']);
+Route::get('/sensor-data/about', ['as' => 'hardware.about', 'uses' => 'SensorDataController@about']);
 
 // Route::get('/sentiment-analysis/{data}', 'SentimentAnalysisController@index');
-Route::get('/sentiment-analysis', 'SentimentAnalysisController@index');
-Route::get('/sentiment-analysis/{text}/json', 'SentimentAnalysisController@json');
+Route::get('/sentiment-analysis', ['as' => 'sentiment-analysis', 'uses' => 'SentimentAnalysisController@index']);
+Route::get('/sentiment-analysis/{text}/json', ['as' => 'sentiment-analysis-json', 'uses' => 'SentimentAnalysisController@json']);
 
-Route::get('/alert-info', 'AlertInfoController@index');
-Route::get('/alert-info/buildings', 'AlertInfoController@buildings');
-Route::get('/alert-info/buildings-collapsed', 'AlertInfoController@collapsedBuildings');
-Route::get('/alert-info/add-building', 'AlertInfoController@addBuilding');
-Route::post('/alert-info/store-building', 'AlertInfoController@storeBuilding');
+Route::get('/alert-info', ['as' => 'alert-info', 'uses' => 'AlertInfoController@index']);
+Route::get('/alert-info/buildings', ['as' => 'alert-info.buildings.list', 'uses' => 'AlertInfoController@buildings']);
+Route::get('/alert-info/buildings-collapsed', ['as' => 'alert-info.buildings-collapsed.list', 'uses' => 'AlertInfoController@collapsedBuildings']);
+Route::get('/alert-info/add-building', ['as' => 'alert-info.building.add', 'uses' => 'AlertInfoController@addBuilding']);
+Route::post('/alert-info/store-building', ['as' => 'alert-info.building.store', 'uses' => 'AlertInfoController@storeBuilding']);
 
-Route::get('/earthquakes/all', 'EarthquakeInfoController@all');
-Route::get('/earthquakes/all-romania', 'EarthquakeInfoController@allRomania');
-Route::get('/earthquakes/raw', 'EarthquakeInfoController@raw');
-Route::get('/earthquakes/romania-past-hour', 'EarthquakeInfoController@pastHourRomania');
+Route::get('/earthquakes/all', ['as' => 'earthquakes.all', 'uses' => 'EarthquakeInfoController@all']);
+Route::get('/earthquakes/all-romania', ['as' => 'earthquakes.romania', 'uses' => 'EarthquakeInfoController@allRomania']);
+Route::get('/earthquakes/raw', ['as' => 'earthquakes.raw', 'EarthquakeInfoController@raw']);
+Route::get('/earthquakes/romania-past-hour', ['as' => 'earthquakes.romania.past-hour', 'uses' => 'EarthquakeInfoController@pastHourRomania']);
+
+Route::get('/before-earthquake', ['as' => 'before-earthquake', 'uses' =>'BeforeEarthquakeController@index']);

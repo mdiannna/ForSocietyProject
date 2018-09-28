@@ -12,8 +12,13 @@ class SensorDataController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index() 
     {
       return  response()->json("Hello!");
+    }
+
+    public function about() 
+    {
+    	return view('hardware.about');
     }
 }

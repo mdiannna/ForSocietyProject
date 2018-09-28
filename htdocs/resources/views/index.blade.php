@@ -7,7 +7,7 @@
       <h1>ForSocietyProject</h1>
       <p>A solution for <b>monitoring earthquakes <br>and reducing the seismic risk</b></p>
       <!-- <a href="/buildings-map/0" class="btn btn-skin scroll">Vezi harta</a> -->
-	<a href="/alert-map" class="btn btn-danger btn-lg">Alert! I am affected by the earthquake!</a>
+	<a href="{{route('alert-map')}}" class="btn btn-danger btn-lg">Alert! I am affected by the earthquake!</a>
       
     </div>
   </section>
@@ -21,10 +21,8 @@
 			<h1 class="text-center">Pre-Eearthquake</h1>
 			<h4 class="text-success"><strong>How to prepare before an earthquake?</strong></h4>
 			<p class="pt-3">There are some simple rules that you can follow to prepare for the earthquake. Watch the video to see them</p>
-			<div class="embed-responsive embed-responsive-16by9">
-	  			<iframe class="embed-responsive-item" src="{{url('/video/earthquake1.mp4')}}" />
-				</iframe>
-			</div>
+		<a href="{{route('before-earthquake')}}" class="btn btn-success btn-lg">Watch video</a>
+
 		</div>
 	</section>
 
@@ -35,10 +33,7 @@
 		<h4 class="text-warning text-center"><strong>Sensors on buildings - collect data and send to intervention teams</strong></h4>
 		<p class="pt-3">We use Arduino boards, gyroscope sensors and Wi-Fi modules to collect data about buildings during an earthquake and notify the intervention teams and authorities about the damaged or even collapsed buildings.</p>
 		
-		<div class="embed-responsive embed-responsive-16by9">
-  			<iframe class="embed-responsive-item" src="{{url('/video/hardware-overview.mp4')}}" />
-			</iframe>
-		</div>
+		<a href="{{route('hardware.about')}}" class="btn btn-warning btn-lg">View more details about hardware</a>
 		
 	</section>
 
@@ -48,14 +43,14 @@
 		<h1 class="text-center">After Earthquake</h1>
 		<div class="pt-3 pb-3 text-center">
 			<h4 class="text-danger"><strong>Alert map - send your location and problem to intervention teams</strong></h4>
-			<a href="/alert-map" class="btn btn-danger btn-lg">Alert! I am affected by the earthquake!</a>
+			<a href="{{route('alert-map')}}" class="btn btn-danger btn-lg">Alert! I am affected by the earthquake!</a>
 		</div>
 		<br>
 
 		<div class="pt-3 pb-3 text-center">
 			<h4 class="text-info"><strong>Using AI to prioritize alerts for intervention teams </strong></h4>
 			<p>We use IBM Natural Language Understanding to prioritize alerts for intervention teams based on sentiment and emotion analysis, tracking mostly the negative sentiment and emotions of fear during the earthquake </p>
-			<a href="/alert-info" class="btn btn-primary text-center"> View alerts</a>
+			<a href="{{route('alert-info')}}" class="btn btn-primary text-center"> View alerts</a>
 		</div>
 
 		<div class="pt-3 pb-3 text-center">
@@ -65,10 +60,10 @@
 			<div class="row text-center">
 				<!-- <div class="col-md-6 md-offset-3"> -->
 					<div class="col-md-3 offset-md-3">
-						<a href="/earthquakes/all" class="btn btn-success text-center"> Recent earthquakes worldwide</a>
+						<a href="{{route('earthquakes.all')}}" class="btn btn-success text-center"> Recent earthquakes worldwide</a>
 					</div>
 					<div class="col-md-3">
-						<a href="/earthquakes/all-romania" class="btn btn-success text-center"> Recent earthquakes in Romania</a>
+						<a href="{{route('earthquakes.romania')}}" class="btn btn-success text-center"> Recent earthquakes in Romania</a>
 					</div>
 				</div>				
 			<!-- </div> -->

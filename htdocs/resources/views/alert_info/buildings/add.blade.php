@@ -10,7 +10,7 @@
 			Add building info
 		</h1>
 		
-		<form method="POST" action="/alert-info/store-building" class="form-inline">
+		<form method="POST" action="{{route('alert-info.building.store')}}" class="form-inline">
 			@csrf
 			<div class="form-group">
 				<label class="control-label col-sm-2 col-md-2 col-lg-2" name="address">Address</label>

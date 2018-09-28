@@ -23,7 +23,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link text-danger" href="alert-map">Alert map</a>
+          <a class="nav-link text-danger" href="{{route('alert-map')}}">Alert map</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -31,10 +31,10 @@
             Intervention teams
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/alert-info">View alerts</a>
+            <a class="dropdown-item" href="{{route('alert-info')}}">View alerts</a>
             <div class="dropdown-divider"></div>
             <!-- <a class="dropdown-item" href="/alert-info/buildings-collapsed">Collapsed buildings</a> -->
-            <a class="dropdown-item" href="/alert-info/buildings">Buildings info</a>
+            <a class="dropdown-item" href="{{route('alert-info.buildings.list')}}">Buildings info</a>
           </div>
         </li>
 
@@ -45,8 +45,8 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="/earthquakes/all">Worldwide</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/earthquakes/all-romania">Romania</a>
-            <a class="dropdown-item" href="/earthquakes/romania-past-hour">Romania - past hour</a>
+            <a class="dropdown-item" href="{{route('earthquakes.romania')}}">Romania</a>
+            <a class="dropdown-item" href="{{route('earthquakes.romania.past-hour')}}">Romania - past hour</a>
           </div>
         </li>
       </ul>

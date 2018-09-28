@@ -49,7 +49,7 @@
 		      	</td>
 		      <td>{{ $pin->sentiment }}</td>
 		      <td>{{ $pin->emotions_coefficient }}</td>
-		      <td><a href="/alert-map" class="btn btn-dark">View on map</a></td>
+		      <td><a href="{{route('alert-map')}}" class="btn btn-dark">View on map</a></td>
 		    </tr>
 		   	@endforeach
 		</table>
