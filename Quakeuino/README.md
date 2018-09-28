@@ -1,7 +1,7 @@
 # ForSocietyProject
 
 
-Code for the earthquake sensor placed on top of the buildings that are at risk of collapsing after an earthquake.
+Code for the earthquake sensor placed on the buildings that are at risk of collapsing after an earthquake.
 
 ## Description
 
