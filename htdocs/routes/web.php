@@ -41,3 +41,5 @@ Route::get('/earthquakes/raw', ['as' => 'earthquakes.raw', 'EarthquakeInfoContro
 Route::get('/earthquakes/romania-past-hour', ['as' => 'earthquakes.romania.past-hour', 'uses' => 'EarthquakeInfoController@pastHourRomania']);
 
 Route::get('/before-earthquake', ['as' => 'before-earthquake', 'uses' =>'BeforeEarthquakeController@index']);
+
+Route::get('/watson-ai', ['as' => 'watson-ai', 'uses' =>'WatsonAIController@index']);

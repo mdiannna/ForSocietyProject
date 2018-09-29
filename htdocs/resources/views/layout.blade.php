@@ -9,6 +9,8 @@
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <meta name="csrf-token" content="{{ csrf_token() }}" />
   <title>ForS0cietyMap</title>
+   @yield('head_additional')
+
 </head>
 
 <body data-spy="scroll">

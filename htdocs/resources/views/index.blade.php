@@ -57,7 +57,7 @@
 			<h4 class="text-primary"><strong>Intelligent Assistant to ease communication and determine needs</strong></h4>
 			<p>IBM Watson Conversation AI provides a more natural way for people affected by the earthquake to send their needs to the intervention teams</p>
 			<!-- <a href="/watson-chat" class="btn btn-primary text-center"> Start chat</a> -->
-			<a href="/" class="btn btn-primary text-center"> Start chat</a>
+			<a href="{{route('watson-ai')}}" class="btn btn-primary text-center"> Start chat</a>
 		</div>
 
 		<div class="pt-3 pb-3 text-center">
