@@ -6,11 +6,11 @@
     <div class="slogan">
       <h1>ForSocietyProject</h1>
       <p>A solution for <b>monitoring earthquakes <br>and reducing the seismic risk</b></p>
-      <!-- <a href="/buildings-map/0" class="btn btn-skin scroll">Vezi harta</a> -->
 	<a href="{{route('alert-map')}}" class="btn btn-danger btn-lg">Alert! I am affected by the earthquake!</a>
       
     </div>
-  </section>
+</section>
+
 @endsection
 
 @section('content')
@@ -88,25 +88,59 @@
 }
 
 #intro{	
-	background-image: url(../img/home.jpeg);
+	background-image: url(../img/home2.jpeg);
 	background-size: cover;
+	/*filter: blur(2px);*/
+  	/*-webkit-filter: blur(2px);*/
 }
 
 .intro .slogan {
-	padding:250px 0 60px;
+	padding:220px 0 60px;
 	text-align: center;
-	
+	/*background: red;
+	opacity: 0.;
+	*/
+/*background-color: rgba(0, 0, 0, 0.5);*/
 }
 .intro .slogan h1 {
-	color: #fff;
+	/*color: #fff;*/
 	line-height: 1.1em;
-	margin-bottom: 20px;
+	margin-top: 20px;
 	 font-size: 40px;
 }
 .intro .slogan p {
-	color: #eee;
+	/*color: #eee;*/
 	margin-bottom: 50px;
 	font-size: 20px;
 }
+/*
+7rem medii
+3rem 0 11rem mobile*/
+
+/* Desktops and laptops ----------- */
+/*@media only screen  and (min-width : 1224px) {
+	.intro .slogan {
+		padding:220px 0 60px;
+	}
+}
+*/
+
+/* Tablets */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+	.intro .slogan {
+		padding: 4rem 0 11rem;
+	}
+}
+
+@media only screen and (max-device-width : 500px)  {
+.intro .slogan {
+		padding: 3rem 0 11rem;
+	}
+	.btn-group-lg>.btn, .btn-lg {
+		font-size: 1rem;
+	}
+}
+
+
 </style>
 @endsection
