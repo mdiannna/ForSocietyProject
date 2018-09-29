@@ -15,6 +15,8 @@ The second stage, Mid-EQ, is monitored by adding the power of hardware sensors o
 
 Finally, after the earthquake, in the Post-EQ stage, there are 4 main components developed by ForS0ciety team that help reduce the seismic risk. First of them is the Alert map, which makes use of the Google Maps API to help people send their location, needs and emergency type to the specialized intervention team. The data is then analyzed by using the IBM Natural Language Understanding module and then prioritized by analyzing emotion and sentiment and sent to intervention teams. The next part is the intelligent assistant provided by IBM Watson AI Conversation, which provides a more natural way to tell the needs and status. The last part is using open data to list the most recent earthquakes worldwide and specifically in Romania and help keep track of the seismic events.
 
+## Project diagram
+![Project diagram](https://raw.githubusercontent.com/mdiannna/ForSocietyProject/master/Project%20planning/forsociety_diagram.png)
 
 ## Authors - ForS0ciety Team
 - **Cotov Anastasia** - *Hardware*
