@@ -3,6 +3,7 @@
 A web-based system for earthquake vulnerability prevention and assisting intervention teams
 
 Link: http://forsocietymap.westeurope.cloudapp.azure.com
+Video demo: https://youtu.be/tc3ciOce-MQ
 ## Description
 ForS0ciety team addresses the problem of earthquakes from 3 perspectives: before the earthquake (Pre-EQ), during earthquake (Mid-EQ) and after earthquake (POST-EQ). 
 
