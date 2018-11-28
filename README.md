@@ -2,8 +2,6 @@
 
 A web-based system for earthquake vulnerability prevention and assisting intervention teams
 
-Link: http://forsocietymap.westeurope.cloudapp.azure.com
-
 Video demo: https://youtu.be/tc3ciOce-MQ
 ## Description
 ForS0ciety team addresses the problem of earthquakes from 3 perspectives: before the earthquake (Pre-EQ), during earthquake (Mid-EQ) and after earthquake (POST-EQ). 
@@ -27,7 +25,7 @@ Finally, after the earthquake, in the Post-EQ stage, there are 4 main components
 
 
 ## Aknowledgements
-Special thanks to mentors from the Re:Rise NGO and IBM Romania
+Special thanks to mentors from the [Re:Rise NGO](http://rerise.org/) and IBM Romania
 
 ### Note
 This is an app developed for the Call for Code event, intended to be developed in the future starting in Bucharest and extending worldwide
